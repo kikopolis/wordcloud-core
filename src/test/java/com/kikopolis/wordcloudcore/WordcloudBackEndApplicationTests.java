@@ -1,6 +1,5 @@
-package com.kikopolis.wordcloudbackend;
+package com.kikopolis.wordcloudcore;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

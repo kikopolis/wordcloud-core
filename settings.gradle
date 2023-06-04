@@ -1,1 +1,3 @@
 rootProject.name = 'wordcloud-core'
+
+include ':wordcloud-common'
