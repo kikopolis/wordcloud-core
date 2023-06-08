@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public final class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
+        register(CorsFilter.class);
         register(WordResource.class);
         register(WorkResource.class);
         register(HealthResource.class);
