@@ -17,12 +17,12 @@ import java.util.List;
 import static jakarta.ws.rs.core.Response.Status.INTERNAL_SERVER_ERROR;
 import static jakarta.ws.rs.core.Response.Status.NOT_FOUND;
 
-@Path("/work")
-public class WorkResource {
+@Path("/work-order")
+public class WorkOrderResource {
     private final WordCloudService wordCloudService;
 
     @Autowired
-    public WorkResource(final WordCloudService wordCloudService) {
+    public WorkOrderResource(final WordCloudService wordCloudService) {
         this.wordCloudService = wordCloudService;
     }
 

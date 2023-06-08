@@ -1,6 +1,6 @@
 package com.kikopolis.wordcloudcore.config;
 
-import com.kikopolis.wordcloudcore.service.messageconverter.ProtoBufMessageConverter;
+import com.kikopolis.wordcloudcore.service.rabbitmq.ProtoBufMessageConverter;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

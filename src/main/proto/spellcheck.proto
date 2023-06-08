@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "com.kikopolis.mq";
+option java_outer_classname = "SpellCheckProto";
+
+message SpellCheckRequest {
+    string content = 1;
+}
+
+message SpellCheckResponse {
+    string content = 1;
+    map <string, string> corrections = 2; // key is the original word, value is the corrected word
+}

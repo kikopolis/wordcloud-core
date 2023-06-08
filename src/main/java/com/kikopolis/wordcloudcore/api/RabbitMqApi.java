@@ -1,4 +1,4 @@
-package com.kikopolis.wordcloudcore.service;
+package com.kikopolis.wordcloudcore.api;
 
 import org.slf4j.Logger;
 import org.springframework.amqp.core.AmqpTemplate;
@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import static org.slf4j.LoggerFactory.getLogger;
 
 @Service
-public class RabbitMqSender {
-    private static final Logger LOGGER = getLogger(RabbitMqSender.class);
+public class RabbitMqApi {
+    private static final Logger LOGGER = getLogger(RabbitMqApi.class);
     private final AmqpTemplate amqpTemplate;
     @Value("${mq.exchange}")
     private String mqExchange;
@@ -18,7 +18,7 @@ public class RabbitMqSender {
     private String mqRoutingKey;
 
     @Autowired
-    public RabbitMqSender(final AmqpTemplate amqpTemplate) {
+    public RabbitMqApi(final AmqpTemplate amqpTemplate) {
         this.amqpTemplate = amqpTemplate;
     }
 

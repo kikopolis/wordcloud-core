@@ -1,4 +1,4 @@
-package com.kikopolis.wordcloudcore.service;
+package com.kikopolis.wordcloudcore.service.rabbitmq;
 
 import com.google.protobuf.ByteString;
 import com.kikopolis.mq.MqMessageProto;

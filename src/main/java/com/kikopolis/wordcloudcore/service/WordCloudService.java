@@ -29,9 +29,9 @@ public class WordCloudService {
         this.rabbitMqService = rabbitMqService;
     }
 
-    public String handleUpload(final InputStream file,
-                               final String ignoredWords,
-                               final boolean ignoreDefaultWords) {
+    public String countFromFile(final InputStream file,
+                                final String ignoredWords,
+                                final boolean ignoreDefaultWords) {
         verifyFileSize(file);
         final UUID uuid = rabbitMqService.handle(file, ignoredWords, ignoreDefaultWords);
         return uuid.toString();
@@ -60,5 +60,9 @@ public class WordCloudService {
         } catch (IOException e) {
             throw new RuntimeException("Error reading file size");
         }
+    }
+
+    public String countFromText(String text, String ignoredWords, boolean ignoreDefaultWords) {
+        return null;
     }
 }

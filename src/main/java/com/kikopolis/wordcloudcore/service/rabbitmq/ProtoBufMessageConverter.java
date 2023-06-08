@@ -1,4 +1,4 @@
-package com.kikopolis.wordcloudcore.service.messageconverter;
+package com.kikopolis.wordcloudcore.service.rabbitmq;
 
 import com.google.protobuf.MessageLite;
 import org.springframework.amqp.core.Message;

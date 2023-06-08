@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.kikopolis.mq";
+option java_outer_classname = "WordCountProto";
+
+message WordCountRequest {
+  string content = 1;
+  string ignoredWords = 2;
+  bool ignoreDefaultWords = 3;
+  string uuid = 4;
+  bool autoCorrectGrammar = 5;
+}
+
+message WordCountResponse {
+  string uuid = 1;
+  map <string, int32> wordCounts = 2; // map of word to count
+}
